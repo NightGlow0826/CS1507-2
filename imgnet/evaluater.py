@@ -34,7 +34,7 @@ model_1: models.ResNet = models.__dict__['resnet18'](num_classes=200)
 checkpoint1 = torch.load(r'checkpoint1.pth.tar')
 
 model_2: models.ResNet = models.__dict__['resnet18'](num_classes=200)
-checkpoint2 = torch.load(r'checkpoint1single3060.pth.tar')
+checkpoint2 = torch.load(r'checkpoint2.pth.tar')
 
 new_state_dict = {}
 for k, v in checkpoint1['state_dict'].items():
