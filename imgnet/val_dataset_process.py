@@ -19,7 +19,7 @@ def mkdir(path):
         print(path)
 
 
-def move():
+def classify():
     # 现在根据val_annotations.txt，来提取出images中的每一类图片，根据每一行图片的信息，来指定对应文件夹存放
     with open("tiny-imagenet-200/val/val_annotations.txt", 'r') as f:
         for line in f.readlines():
@@ -47,4 +47,4 @@ if __name__ == '__main__':
             folder = file + '/' + line
             mkdir(folder)
 
-    move()
+    classify()
