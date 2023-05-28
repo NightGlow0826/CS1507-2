@@ -31,7 +31,7 @@ from torch.utils.data import Subset
 from tqdm import tqdm
 
 model_1: models.ResNet = models.__dict__['resnet18'](num_classes=200)
-checkpoint1 = torch.load(r'checkpoint1admasingle3060.pth.tar')
+checkpoint1 = torch.load(r'checkpoint1.pth.tar')
 
 model_2: models.ResNet = models.__dict__['resnet18'](num_classes=200)
 checkpoint2 = torch.load(r'checkpoint1single3060.pth.tar')
